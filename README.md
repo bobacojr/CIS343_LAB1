@@ -1,11 +1,11 @@
 gcc -Wall lv.c main.c -o program
 
-valgrind --type-check=full ./program
+valgrind --leak-check=full ./program
 
 
 OR
 
 
-fcc -Wall lv.c main.c -o program
+gcc -Wall lv.c main.c -o program
 
 ./program
