@@ -85,7 +85,7 @@ bool lv_append(lite_vector* vec, void* element) {
     if (vec->length >= vec->max_capacity) {
         if (!lv_resize(vec)) return false;
     }
-    // Create a copy of the element (extra credit implementation)
+    // Create a copy of the element (extra credit)
     void* element_copy = malloc(vec->type_size);
     if (!element_copy) return false;
     memcpy(element_copy, element, vec->type_size);
