@@ -7,4 +7,5 @@ OR
 
 
 fcc -Wall lv.c main.c -o program
+
 ./program
